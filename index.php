@@ -5,6 +5,6 @@
 	<title>prueba desde repositorio online</title>
 </head>
 <body>
-	<h1>Mi proyecto</h1>
+	<h1>Tu brujeria</h1>
 </body>
 </html>
