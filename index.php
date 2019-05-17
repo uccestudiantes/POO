@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>prueba</title>
+	<title>prueba desde repositorio online</title>
 </head>
 <body>
 	
