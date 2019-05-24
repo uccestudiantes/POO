@@ -22,9 +22,9 @@ session_start();
  			$Conectar= $AbrirConexion->conexion; 
  			//new mysqli('localhost','root','','universidad');
  			//echo "$Conectar";
- 			$usuario = $_POST['user'];
- 			$passw = $_POST['passw'];
- 			$sql = "SELECT * FROM usuarios where user='$usuario' and password='$passw'";
+ 			$usuario = $_POST['Usuario'];
+ 			$passw = $_POST['Contrasena'];
+ 			$sql = "SELECT * FROM usuarios where Usuario='$usuario' and Contrasena='$passw'";
  			$query = mysqli_query($Conectar, $sql);
  			if(mysqli_num_rows($query)>0)
  			{
