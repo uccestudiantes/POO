@@ -65,6 +65,9 @@
       <button type="submit" class="btn btn-primary btn-sm"href="gestorInformes.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE INFORMES</button>
     </li>&nbsp
     <li class="nav-item active">
+      <button id="reporte" type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:180px; height:50px'">GESTOR DE INFORMES</button>
+    </li>&nbsp
+    <li class="nav-item active">
       <button type="submit" class="btn btn-primary btn-sm"href="gestorProyectos.php" class="btn btn-secondary"style='width:210px; height:50px'>GESTOR DE PROYECTOS</button>
     </li>&nbsp 
     <li>
@@ -78,7 +81,11 @@
 </nav>
 <hr>
 </header>
+
+
 <!-- FIN HEADER -->
+
+
 
 <!-- MENU PRINCIPAL -->		
  <main>
@@ -105,7 +112,7 @@
         </div>
       </div>
     
-      <div class="col-10">
+      <div class="col-10" id="article">
         <article>
           
         </article>
@@ -244,6 +251,13 @@
 		</div>
 	</div>
 	<script src="popup.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+        $("#reporte").click(function(event) {
+          $("#article").load('index_reportes.html');
+        });
+      });
+    </script>
 
   <!-- FIN METODO POPUP INICIAR SESION -->
 </body>
