@@ -99,7 +99,7 @@
             </button><br><br>
             <button type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:200px; height:65px'>GESTOR DE HORARIOS
             </button><br><br>
-            <button type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:200px; height:65px'>GESTOR DE SALONES
+            <button id="salones" type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:200px; height:65px'>GESTOR DE SALONES
             </button><br><br>
             <button type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:200px; height:65px'>GESTOR DE INFORMES
             </button><br><br>
