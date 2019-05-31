@@ -247,15 +247,25 @@
 			</form>
 		</div>
 	</div>
-	<script src="popup.js"></script>
+ <script src="popup.js"></script>
   <script type="text/javascript">
       $(document).ready(function() {
         $("#informe").click(function(event) {
           $("#article").load('index_reportes.html');
         });
-        $("#informe").click(function(event) {
+        $("#social").click(function(event) {
+          $("#article").load('Gestor_Social/crear.php');
+        });
+         $("#horarios").click(function(event) {
           $("#article").load('index_reportes.html');
         });
+         $("#salones").click(function(event) {
+          $("#article").load('index_reportes.html');
+        });
+          $("#proyectos").click(function(event) {
+          $("#article").load('index_reportes.html');
+        });
+
       });
     </script>
 
