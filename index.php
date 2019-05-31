@@ -62,10 +62,7 @@
       <button type="submit" class="btn btn-primary btn-sm"href="gestorSalones.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE SALONES</button>
     </li>&nbsp
     <li class="nav-item active">
-      <button type="submit" class="btn btn-primary btn-sm"href="gestorInformes.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE INFORMES</button>
-    </li>&nbsp
-    <li class="nav-item active">
-      <button id="reporte" type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:180px; height:50px'">GESTOR DE INFORMES</button>
+      <button id="informe" type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:180px; height:50px'">GESTOR DE INFORMES</button>
     </li>&nbsp
     <li class="nav-item active">
       <button type="submit" class="btn btn-primary btn-sm"href="gestorProyectos.php" class="btn btn-secondary"style='width:210px; height:50px'>GESTOR DE PROYECTOS</button>
@@ -253,7 +250,7 @@
 	<script src="popup.js"></script>
   <script type="text/javascript">
       $(document).ready(function() {
-        $("#reporte").click(function(event) {
+        $("#informe").click(function(event) {
           $("#article").load('index_reportes.html');
         });
       });
