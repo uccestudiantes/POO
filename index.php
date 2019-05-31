@@ -51,21 +51,21 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item active">
-      <button type="submit" class="btn btn-primary btn-sm" href="gestorSocial.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR SOCIAL
+      <button id="social" type="submit" class="btn btn-primary btn-sm" href="gestorSocial.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR SOCIAL
       </button>
     </li>&nbsp
     <li class="nav-item active">
-      <button type="submit" class="btn btn-primary btn-sm"href="gestorHorarios.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE HORARIOS
+      <button id="horarios" type="submit" class="btn btn-primary btn-sm"href="gestorHorarios.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE HORARIOS
       </button>
     </li>&nbsp
     <li class="nav-item active">
-      <button type="submit" class="btn btn-primary btn-sm"href="gestorSalones.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE SALONES</button>
+      <button id="salones" type="submit" class="btn btn-primary btn-sm"href="gestorSalones.php" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE SALONES</button>
     </li>&nbsp
     <li class="nav-item active">
       <button id="informe" type="submit" class="btn btn-primary btn-sm" class="btn btn-secondary"style='width:180px; height:50px'>GESTOR DE INFORMES</button>
     </li>&nbsp
     <li class="nav-item active">
-      <button type="submit" class="btn btn-primary btn-sm"href="gestorProyectos.php" class="btn btn-secondary"style='width:210px; height:50px'>GESTOR DE PROYECTOS</button>
+      <button id="proyecto" type="submit" class="btn btn-primary btn-sm"href="gestorProyectos.php" class="btn btn-secondary"style='width:210px; height:50px'>GESTOR DE PROYECTOS</button>
     </li>&nbsp 
     <li>
       <form class="form-inline my-2 my-lg-0">
@@ -254,16 +254,16 @@
           $("#article").load('index_reportes.html');
         });
         $("#social").click(function(event) {
-          $("#article").load('Gestor_Social/crear.php');
+          $("#article").load('');
         });
          $("#horarios").click(function(event) {
-          $("#article").load('index_reportes.html');
+          $("#article").load('');
         });
          $("#salones").click(function(event) {
           $("#article").load('index_gestorsalon.php');
         });
           $("#proyectos").click(function(event) {
-          $("#article").load('index_reportes.html');
+          $("#article").load('');
         });
 
       });
