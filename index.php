@@ -260,7 +260,7 @@
           $("#article").load('index_reportes.html');
         });
          $("#salones").click(function(event) {
-          $("#article").load('index_reportes.html');
+          $("#article").load('index_gestorsalon.php');
         });
           $("#proyectos").click(function(event) {
           $("#article").load('index_reportes.html');
