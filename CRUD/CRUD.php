@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
     <title>CRUD · Bootstrap</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
@@ -45,7 +42,7 @@
         <h4 class="my-0 font-weight-normal">Crear</h4>
       </div>
       <div class="card-body">
-        <button type="button" class="btn btn-lg btn-block btn-primary" id='crear'>Crear</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary" id='crear' >Crear</button>
       </div>
     </div>
     <div class="card mb-3 shadow-sm">
@@ -72,6 +69,15 @@
         <button type="button" class="btn btn-lg btn-block btn-primary">Borrar</button>
       </div>
     </div>
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Conexion</h4>
+      </div>
+      <div class="card-body">
+        <button type="button" class="btn btn-lg btn-block btn-primary" id='conexion'>Conexion</button>
+      </div>
+    </div>
+
   </div>
   <div id="article"><article>   </article></div>
 </div>
@@ -79,10 +85,13 @@
 <script type="text/javascript">
       $(document).ready(function() {
         $("#crear").click(function(event) {
-          $("#article").load('reporte.html');
+          $("#article").load('crear.php');
+        });
+        $("#conexion").click(function(event) {
+          $("#article").load('conexion.php');
         });
         $("#actualiza").click(function(event) {
-          $("#article").load('informe.html');
+          $("#article").load('actualizar.php');
         });
       });
     </script>
