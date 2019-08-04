@@ -10,7 +10,7 @@
 <body>
 
 	<div class="container"><div class="mb-12 text-center">
-	<form action="validar.php" method="post">
+	<form action="crear.php" method="post">
 	<div class="col-md-12 order-md-1">
       <h4 class="mb-3">Cree su usuario</h4>
       <form class="create-user" novalidate="">
@@ -70,10 +70,38 @@
           </div>
         </div>
     </form>
-
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" type="submit" name='crear'>Crear</button>
       </form>
-    </div></div></div>
+      <?php 
+		    if(isset($_POST['crear']))
+		 	{
+				include('conexionCrud.php');
+
+	            $frName = $_POST['firstName'];
+	            $ltName = $_POST['lastName'];
+	            $userName = $_POST['username'];
+	            $email = $_POST['email'];
+	            $addr = $_POST['address'];
+	            $country = $_POST['country'];
+
+
+	            $query= ("insert into user (firtsName,lastName,userName,email,address,country) VALUES ('$frName','$ltName','$userName','$email','$addr','$country')");
+	            //echo "Usuario Registrado Correctamente";
+	            mysqli_query($conexion, $query) or die ("Error al registrar al usuario");
+
+	            //$conexion -> query("insert into user (firtsName,lastName,userName,email,address,country) VALUES ('$frName','$ltName','$userName','$email','$addr','$country')");
+	            //echo "Usuario Registrado Correctamente";
+	            include('desconect.php');
+	            echo '<script> alert("¡Su informacion ha sido validada e ingresada correctamente!"); </script>';
+	            echo '<script> window.location="CRUD.php"; </script>';
+	            
+	            /* $conectar->query("insert into proveedor (cc,nombre,apellido,direccion,telefono) VALUES ('$doc','$nombre','$apellido','$dir','$tel')");*/
+
+			}
+	  ?>
+    </div>
+</div>
+</div>
 </body>
 </html>

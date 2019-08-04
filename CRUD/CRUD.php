@@ -58,7 +58,7 @@
         <h4 class="my-0 font-weight-normal">Consultar</h4>
       </div>
       <div class="card-body">
-        <button type="button" class="btn btn-lg btn-block btn-primary">Consultar</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary" id='consulta'>Consultar</button>
       </div>
     </div>
     <div class="card mb-3 shadow-sm">
@@ -92,6 +92,9 @@
         });
         $("#actualiza").click(function(event) {
           $("#article").load('actualizar.php');
+        });
+        $("#consulta").click(function(event) {
+          $("#article").load('consulta.php');
         });
       });
     </script>

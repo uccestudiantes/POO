@@ -23,6 +23,6 @@
             <label class="custom-control-label" for="paypal">PayPal</label>
           </div>
         </div>
-
+x 
 </body>
 </html>
