@@ -1,6 +1,6 @@
 <?php 
 
 	mysqli_close($conexion);
-	//echo "Finalizado";
+	echo "Finalizado";
 
  ?>	
